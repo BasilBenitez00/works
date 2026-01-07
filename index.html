@@ -2,62 +2,191 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basil Benitez | Game Developer Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+    body { background: #0b1120; color: #e5e7eb; line-height: 1.6; }
+    a { color: #38bdf8; text-decoration: none; }
+
+    header { padding: 70px 20px; text-align: center; background: linear-gradient(180deg, #020617, #0b1120); }
+    header h1 { font-size: 2.8rem; }
+    header p { margin-top: 12px; color: #94a3b8; }
+
+    nav { display: flex; justify-content: center; gap: 24px; margin-top: 25px; }
+
+    section { max-width: 1100px; margin: 70px auto; padding: 0 20px; }
+    section h2 { font-size: 2.1rem; margin-bottom: 25px; border-bottom: 2px solid #1e293b; padding-bottom: 10px; }
+
+    .about p { max-width: 750px; color: #cbd5f5; }
+
+    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 15px; }
+    .skill { background: #020617; padding: 16px; border-radius: 10px; text-align: center; border: 1px solid #1e293b; }
+
+    .projects { display: flex; flex-direction: column; gap: 40px; }
+    .project { background: #020617; border-radius: 14px; overflow: hidden; border: 1px solid #1e293b; }
+
+    .project-media img, .project-media video {
+      width: 100%;
+      display: block;
+      background: #000;
+    }
+
+    .project-content { padding: 22px; }
+    .project-content h3 { margin-bottom: 10px; }
+    .project-content p { color: #94a3b8; margin-bottom: 12px; }
+
+    .project-content ul { margin-left: 18px; margin-bottom: 14px; color: #cbd5f5; }
+
+    .project-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { background: #1e293b; padding: 6px 10px; border-radius: 999px; font-size: 0.8rem; color: #cbd5f5; }
+
+    footer { text-align: center; padding: 35px; color: #64748b; border-top: 1px solid #1e293b; }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>Your Name</h1>
-    <p>Game Developer | Unity | C#</p>
-  </header>
+<header>
+  <h1>Basil Benitez</h1>
+  <p>Game Developer • Unity • C# • Gameplay & Systems</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a game developer passionate about creating fun and immersive
-      experiences using Unity and C#. I enjoy gameplay programming,
-      optimization, and polishing mechanics.
-    </p>
-  </section>
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I am a game developer specializing in Unity, focused on gameplay systems,
+    UI integration, debugging, and performance optimization. I enjoy building
+    prototypes and turning ideas into polished playable experiences.
+  </p>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">Unity Engine</div>
+    <div class="skill">C# Programming</div>
+    <div class="skill">Gameplay Mechanics</div>
+    <div class="skill">AI Behaviour</div>
+    <div class="skill">Player Controllers</div>
+    <div class="skill">UI / HUD</div>
+    <div class="skill">Performance Optimization</div>
+    <div class="skill">Bug Fixing & QA</div>
+    <div class="skill">Photon Unity Networking</div>
+    <div class="skill">Git / Version Control</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Game Projects</h2>
+  <div class="projects">
 
     <div class="project">
-      <h3>🎮 Game Project 1</h3>
-      <p>Short description of your game.</p>
-      <a href="https://github.com/yourusername/project1" target="_blank">GitHub</a>
+      <div class="project-media">
+        <img src="" alt="Gameplay Screenshot">
+      </div>
+      <div class="project-content">
+        <h3>3D Top Down Shooter</h3>
+        <p>A fast-paced 3D Top down shooter prototype built in Unity.</p>
+        <strong>What I worked on</strong>
+        <ul>
+          <li>Implemented player movement, weapon behaviour, and combat</li>
+          <li>Designed enemy AI behaviors</li>
+          <li>Built checkpoint and respawn systems</li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag">3D</span>
+        </div>
+      </div>
     </div>
 
     <div class="project">
-      <h3>🕹 Game Project 2</h3>
-      <p>Short description of your game.</p>
-      <a href="#">Play Demo</a>
+      <div class="project-media">
+        <video controls>
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+      <div class="project-content">
+        <h3>Juan Takbo</h3>
+        <p>A 3D Mobile Endless runner game with Candy Selling Mechanic.</p>
+        <strong>What I worked on</strong>
+        <ul>
+          <li>Primarily worked as QA Tester for the Project</li>
+          <li>Worked on Juan House Feature</li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Unity</span>
+          <span class="tag">3D</span>
+          <span class="tag">Mobile</span>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Unity Engine</li>
-      <li>C# Programming</li>
-      <li>Gameplay Systems</li>
-      <li>UI / UX</li>
-      <li>Version Control Systems</li>
-    </ul>
-  </section>
+    <div class="project">
+      <div class="project-media">
+        <img src="" alt="UI Screenshot">
+      </div>
+      <div class="project-content">
+        <h3>Parol AR</h3>
+        <p>Augmented Reality Mobile Application designed for making Parols</p>
+        <strong>What I worked on</strong>
+        <ul>
+          <li>Created the whole Parol Customization System</li>
+          <li>Polished UI and menu flow</li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Augmented Reality</span>
+          <span class="tag">Customization</span>
+          <span class="tag">UI</span>
+        </div>
+      </div>
+    </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-    <p>GitHub: <a href="https://github.com/BasilBenitez00">github.com/yourusername</a></p>
-  </section>
+    <div class="project">
+      <div class="project-media">
+        <video controls>
+          <source src="prototype.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="project-content">
+        <h3>Gameplay Prototype Collection</h3>
+        <p>A collection of small gameplay prototypes exploring mechanics and systems.</p>
+        <strong>What I worked on</strong>
+        <ul>
+          <li>Rapid prototyping of core gameplay ideas</li>
+          <li>System iteration based on playtesting</li>
+          <li>Code refactoring for reusability</li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Prototyping</span>
+          <span class="tag">Systems</span>
+          <span class="tag">Unity</span>
+        </div>
+      </div>
+    </div>
 
-  <footer>
-    <p>© 2026 Basil Benitez</p>
-  </footer>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: yourname@email.com</p>
+  <p>GitHub: <a href="#">github.com/yourname</a></p>
+  <p>GitLab: <a href="#">gitlab.com/yourname</a></p>
+  <p>Behance: <a href="#">behance.net/yourname</a></p>
+  <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+</section>
+
+<footer>
+  © 2026 Your Name • Game Developer Portfolio
+</footer>
 
 </body>
 </html>
